@@ -1,4 +1,4 @@
-function f = Flux(N1,N2,x1,y1,x2,y2,rE,beta2,alpha1,alpha2,gamma1,gamma2)
+function f = Flux_slow_bd_loss_saturation(N1,N2,x1,y1,x2,y2,rE,beta2,alpha1,alpha2,gamma1,gamma2)
 %---------------------------------------------------------------------------------------------
 
 %This function computes the fluxes for the arrangements with N1 first and N2 second catalysts

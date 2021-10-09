@@ -1,4 +1,4 @@
-function optcoordiante = random_search_single_enzyme_supersym_ring2(rs_iterations,N_random_starts,N_rings,N,rE,alpha1,alpha2,savepath)
+function optcoordiante = random_search_single_enzyme_ring_sym_dyn(rs_iterations,N_random_starts,N_rings,N,rE,alpha1,alpha2,savepath)
 %---------------------------------------------------------------------------------------------
 
 %This function optimizes the arrangement of N second catalysts
@@ -61,7 +61,7 @@ X_0 = X_00;
 
 n = 0;
 
-eff = Flux(1,N,x1,y1,X_0(1,:),X_0(2,:),rE,alpha1,alpha2);
+eff = Flux_bd_loss(1,N,x1,y1,X_0(1,:),X_0(2,:),rE,alpha1,alpha2);
 
 eff_0=eff(2);
 
@@ -128,7 +128,7 @@ end
 
 end
 
-eff = Flux(1,N,x1,y1,X_0(1,:),X_0(2,:),rE,alpha1,alpha2);
+eff = Flux_bd_loss(1,N,x1,y1,X_0(1,:),X_0(2,:),rE,alpha1,alpha2);
 
 eff_test = eff(2);
 

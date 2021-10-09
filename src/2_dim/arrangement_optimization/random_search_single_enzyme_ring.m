@@ -99,7 +99,7 @@ end
 
 end
 
-eff = Flux(1,N,x1,y1,X_0(1,:),X_0(2,:),rE,alpha1,alpha2);
+eff = Flux_bd_loss(1,N,x1,y1,X_0(1,:),X_0(2,:),rE,alpha1,alpha2);
 
 eff_test = eff(2);
 
